@@ -1,0 +1,124 @@
+
+body {
+  margin: 0;
+ box-sizing: border-box;
+  
+}
+
+.head{
+  margin-bottom: 26px;
+  display: flex;
+  background-color: rgb(241, 241, 53);
+}
+.head img{ width:40px;height:40px}
+.ham{
+  background-color: rgb(241, 241, 53);
+border: none ;
+color: black;}
+.ham:hover{
+  background-color: rgb(226, 226, 208);
+  color: black;
+}
+.foot {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+ color: rgb(10, 9, 9);
+ background-color:rgb(189, 186, 186);
+  text-align: center;
+}
+.main_note{
+  display: flex;
+  flex-direction: column;
+box-shadow: 0 1px 1px rgba(0,0,0,0.08), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.16), 0 8px 8px rgba(0,0,0,0.20);
+width: 300px;
+position: relative;
+margin: auto;
+ margin-bottom: 40px;
+}
+.main_note input{
+  border: none;
+  font-weight: bolder;
+ margin-bottom: 5px;
+ margin-left: 9px;
+}
+.main_note input:focus{
+  outline: none;
+}
+.main_note textarea{
+  border: none;
+  text-decoration: none;
+  margin-left: 9px;
+   padding-bottom:70px;
+   font-size: small;
+}
+.main_note textarea:focus{
+  outline: none;
+}
+.main_note button{
+position: absolute;
+bottom: -11px;
+right: -10px;
+border-radius: 50px;
+text-align: center;
+font-weight: bolder;
+background-color: rgb(241, 241, 53);
+border: 2px whitesmoke;
+}
+.note{
+margin-top: 10px;
+box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+width: 300px;
+height: 140px;
+position: relative;
+/* border: 2px solid salmon; */
+margin-top: 20px;
+margin-left: 30px;
+
+}
+.note h3{
+  border: none;
+  font-weight: bolder;
+ margin-bottom: 5px;
+ margin-left: 9px;
+}
+.note button{
+  position: absolute;
+ top : -10px;
+  right: -14px;
+  border-radius: 50px;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(241, 241, 53);
+  border: 2px whitesmoke;
+  }
+  .note p{
+    border: none;
+    text-decoration: none;
+    margin-left: 9px;
+     padding-bottom:70px;
+  }
+   .gridnote{
+    
+    display: grid;
+   grid-template-columns: auto auto auto; 
+   gap: 16px;
+    margin-bottom: 20px;
+   }
+   @media only screen and (max-width: 1050px) {
+    /* Styles for medium devices */
+    .gridnote {
+      display: grid;
+      grid-template-columns: auto auto; /* Two columns */
+      gap: 16px; /* Adjust the gap between columns as needed */
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    /* Styles for medium devices */
+    .gridnote {
+      display: grid;
+      grid-template-columns: auto ; 
+      margin-left: auto;
+    }
+  }
